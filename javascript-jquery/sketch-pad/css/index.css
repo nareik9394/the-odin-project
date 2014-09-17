@@ -1,0 +1,32 @@
+#buttonSpace {
+	margin: auto;
+	margin-bottom: 10px;
+	text-align: center;
+	width: 960px;
+}
+
+button {
+	height: 30px;
+	width: 150px;
+}
+
+#gridSpace {
+	height: 960px;
+	width: 960px;
+
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+.smallGrid {
+	border: 1px solid black;
+	float: left;
+}
+
+.newRow {
+	clear: both;
+}
+
+.active {
+	background-color: black;
+}
