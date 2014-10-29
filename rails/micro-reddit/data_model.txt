@@ -1,0 +1,33 @@
+micro-reddit data model
+
+Users
+	- user_name:string [present, 25 chars max]
+	- email:string [present]
+	- password:string [present, 6-20 chars]
+	- id:integer
+	- created_at:datetime
+	- updated_at:datetime
+
+	has_many posts, comments
+
+Posts
+	- title:string [present]
+	- body:text
+	- url:string
+	- user_id:integer [present]
+	- id:integer
+	- created_at:datetime
+	- updated_at:datetime
+
+	belongs_to user
+	has_many comments
+
+Comments
+	- body:text [present]
+	- post_id:integer [present]
+	- user_id:integer [present]
+	- id:integer
+	- created_at:datetime
+	- updated_at:datetime
+
+	belongs_to post, user
